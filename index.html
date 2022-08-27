@@ -1,92 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="styles/stylesheet.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      * {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
-        font-weight: bolder;
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        width: 80%;
-        margin: auto;
-        background-color: #eaeaea;
-      }
-      .nav-header {
-        padding: 20px;
-        grid-template-columns: 3fr 0.9fr 0.9fr 0.9fr 0.9fr 3fr;
-        display: grid;
-        justify-items: center;
-        align-items: center;
-      }
-      .nav-header h1 {
-        font-size: 2.5em;
-      }
-      button {
-        padding: 4px 8px;
-        border-radius: 10px;
-        background: rgb(108, 99, 255);
-        color: white;
-        border: none;
-      }
-      .jumbotron {
-        height: 600px;
-        display: flex;
-        justify-items: center;
-        align-items: center;
-      }
-      .jumbotron h1 {
-        text-align: left;
-      }
-      .jumbotron img {
-        flex-shrink: 1;
-      }
-      h1 span:nth-child(1) {
-        color: rgb(108, 99, 255);
-      }
-      li {
-        list-style: none;
-      }
-      .Satu,
-      .Dua,
-      .Tiga {
-        width: 200px;
-      }
-      main h1 {
-        color: white;
-      }
-      aside {
-        text-align: center;
-        font-size: 6ex;
-        color: white;
-      }
-      footer,
-      main h1 {
-        text-align: center;
-      }
-      article div {
-        padding: 4px;
-        border-radius: 9px;
-        margin: 19px;
-        border: black solid 1px;
-        text-align: center;
-      }
-      article div h3 {
-        color: rgb(108, 99, 255);
-        text-align: center;
-      }
-      .footer-color {
-        width: 100%;
-        background-color: rgb(108, 99, 255);
-        height: 20px;
-        bottom: 0;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -97,14 +16,15 @@
         <li>About</li>
         <li>contact</li>
         <button>Sign</button>
+        <div><img src="assets/menu.png" class="menu" /></div>
       </nav>
     </header>
     <main>
       <div class="jumbotron">
-        <h1>Find Your Favorite In Our Store</h1>
-        <img src="./assets/shopping.svg" alt="" srcset="" style="width: 500px" />
+        <h1>Find Your Favorite <br />In Our Store</h1>
+        <img src="./assets/shopping.svg" alt="" />
       </div>
-      <aside>What We Provide</aside>
+      <h3>What We Provide</h3>
       <article>
         <div class="box">
           <img
@@ -112,11 +32,15 @@
             src="https://commerce-nurhuda.vercel.app/_next/image?url=https%3A%2F%2Fcdn11.bigcommerce.com%2Fs-9epne65gzf%2Fimages%2Fstencil%2Foriginal%2Fproducts%2F114%2F397%2FMen-TShirt-Black-Front__70046__53243.1604028516.png&w=1024&q=85"
             alt="Baju"
           />
-          <h3>Rp.1000</h3>
+          <h2>T-SHIRT</h2>
+          <h3>Baju Rp.1000</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam modi corporis
-            asperiores autem tempore ipsum, quod veritatis aut sapiente optio possimus accusantium.
-            Ducimus ea quaerat quisquam in quo temporibus dignissimos.
+            T-Shirt Erigo saat ini merupakan salah satu lini pakaian terbaik dan berkualitas tinggi
+            di antara Local Brand Indonesia. Dibuat dengan bahan cotton yang nyaman untuk menemani
+            harimu dan memiliki print desain yang unik. Dapatkan long lasting tee dengan warna
+            cantik ini untuk merasa muda selamanya! Untuk Model Pria: Tinggi 185-186 cm, Berat 75
+            kg, Menggunakan Ukuran XL Untuk Model Wanita: Tinggi 168-170 cm, Berat 55 kg,
+            Menggunakan Ukuran M
           </p>
         </div>
         <div class="box">
@@ -125,11 +49,16 @@
             src="https://commerce-nurhuda.vercel.app/_next/image?url=https%3A%2F%2Fcdn11.bigcommerce.com%2Fs-9epne65gzf%2Fimages%2Fstencil%2Foriginal%2Fproducts%2F116%2F396%2FMen-Jacket-Front-Black__15466__56050.1604028516.png&w=1200&q=85"
             alt=""
           />
+          <h2>JACKET</h2>
           <h3>Rp.2000</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam modi corporis
-            asperiores autem tempore ipsum, quod veritatis aut sapiente optio possimus accusantium.
-            Ducimus ea quaerat quisquam in quo temporibus dignissimos.
+            Pullover Jacket Erigo saat ini merupakan salah satu lini pakaian terbaik dan berkualitas
+            tinggi di antara Local Brand Indonesia. Dengan model loose-fit berlengan panjang
+            memiliki tudung yang bisa disesuaikan. Menampilkan saku kantong depan dan label cetak
+            yang keren dan dengan warnanya yang bagus, hoodie ini akan membuat tampilanmu lebih
+            menarik, saku fungsional, dan karet pada ujung lengan. Pullover Jacket Erigo memiliki
+            printed design yang unik pada bagian depan, lengan dan punggung, dengan warna memukau
+            siap menjadikanmu penuh semangat!
           </p>
         </div>
         <div class="box">
@@ -138,14 +67,22 @@
             src="https://commerce-nurhuda.vercel.app/_next/image?url=https%3A%2F%2Fcdn11.bigcommerce.com%2Fs-9epne65gzf%2Fimages%2Fstencil%2Foriginal%2Fproducts%2F132%2F447%2FHat-front-black__34181__26989.1604028519.png&w=1200&q=85"
             alt=""
           />
+          <h2>HAT</h2>
           <h3>Rp.3000</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam modi corporis
-            asperiores autem tempore ipsum, quod veritatis aut sapiente optio possimus accusantium.
-            Ducimus ea quaerat quisquam in quo temporibus dignissimos.
+            Caps Erigo Hadir Kembali ! dengan design terbaru, Tentunya menggunkan bahan premium,
+            dengan logo bordir tebal di bagian depan dan belakang juga size yang Adjustable. bisa
+            menjadi salah satu aksesoris tambahan untuk outfit kamu Size : Adjustable Bahan : Kanvas
+            Twill Logo : Brodir ( Depan dan Belakang )
           </p>
         </div>
       </article>
+      <aside>
+        <img src="assets/foto.jpg" alt="foto" class="foto" />
+        Nama Lengkap saya Imam Robain , Saya lahir di Bogor, 16 Februari 2000 dan saya berumur 22
+        tahun. Saya mampu berkomunikasi dengan Bahasa Indonesia yang sopan dan baik. Saya memiliki
+        hobi bermain Game.
+      </aside>
     </main>
     <footer>
       <div class="footer-color">

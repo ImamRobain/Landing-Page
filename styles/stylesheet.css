@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+* {
+  font-family: 'Inconsolata';
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
+}
+.menu {
+  width: 20px;
+}
+body {
+  width: 90%;
+  margin: auto;
+  background-color: #eaeaea;
+}
+.nav-header {
+  padding: 20px;
+  grid-template-columns: 3fr 0.9fr 0.9fr 0.9fr 0.9fr 3fr;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.nav-header h1 {
+  font-size: 2.5em;
+}
+.menu {
+  display: none;
+}
+button {
+  padding: 4px 8px;
+  border-radius: 10px;
+  background: rgb(108, 99, 255);
+  color: white;
+  border: none;
+}
+.jumbotron {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jumbotron h1 {
+  text-align: left;
+}
+.jumbotron img {
+  flex-shrink: 1;
+  width: 500px;
+}
+h1 span:nth-child(1) {
+  color: rgb(108, 99, 255);
+}
+li {
+  list-style: none;
+}
+.Satu,
+.Dua,
+.Tiga {
+  width: 200px;
+}
+main h1 {
+  color: white;
+}
+main > h3 {
+  text-align: center;
+  font-size: 6ex;
+  color: white;
+}
+footer,
+main h1 {
+  text-align: center;
+}
+article div {
+  padding: 4px;
+  border-radius: 9px;
+  margin: 19px;
+  border: black solid 1px;
+  text-align: center;
+}
+article {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+article div h3 {
+  color: rgb(108, 99, 255);
+  text-align: center;
+}
+.box {
+  width: 25%;
+}
+.foto {
+  width: 150px;
+  border: radius 100%;
+  border-radius: 100%;
+}
+aside {
+  border: black solid 1px;
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 9px;
+  padding: 25px;
+  width: 600px;
+  margin: auto;
+}
+.footer-color {
+  width: 100%;
+  background-color: rgb(108, 99, 255);
+  height: 20px;
+  bottom: 0;
+}
+
+/* Batasan Tirex */
+
+@media screen and (max-width: 513px) {
+  .nav-header li {
+    display: none;
+  }
+  .nav-header {
+    grid-template-columns: 3fr 0.9fr 0.9fr;
+    justify-items: flex-end;
+  }
+  .jumbotron {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .jumbotron img {
+    width: 300px;
+  }
+  .menu {
+    display: block;
+  }
+  .Satu,
+  .Dua,
+  .Tiga {
+    width: 100px;
+  }
+  .box {
+    overflow: hidden;
+    width: 300px;
+    padding: 10px;
+  }
+  article {
+    flex-wrap: wrap;
+  }
+  .foto {
+    width: 100px;
+    border-radius: 100%;
+    padding: 20px;
+  }
+  aside {
+    border: black solid 1px;
+    border-radius: 9px;
+    display: flex;
+    padding: 10px 10px 10px 0px;
+  }
+}
